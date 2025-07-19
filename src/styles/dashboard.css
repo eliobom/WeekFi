@@ -1,0 +1,105 @@
+/* Dashboard Specific Styles */
+
+.dashboard-container {
+  @apply min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden;
+}
+
+.dashboard-background {
+  @apply absolute inset-0;
+}
+
+.dashboard-floating-1 {
+  @apply absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-emerald-400/10 rounded-full blur-3xl animate-pulse;
+}
+
+.dashboard-floating-2 {
+  @apply absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-amber-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse;
+}
+
+.dashboard-header {
+  @apply mb-12;
+}
+
+.dashboard-title {
+  @apply text-6xl font-black text-transparent bg-gradient-to-r from-white via-blue-200 to-emerald-200 bg-clip-text mb-4 tracking-tight;
+}
+
+.dashboard-subtitle {
+  @apply text-2xl text-blue-200 font-light;
+}
+
+.dashboard-toggle {
+  @apply flex items-center space-x-3 px-8 py-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl hover:bg-white/20 hover:border-white/30 hover:scale-105 transition-all duration-300 shadow-2xl font-medium text-white;
+}
+
+.stat-card {
+  @apply backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8 hover:scale-110 hover:shadow-2xl transition-all duration-500 relative overflow-hidden cursor-pointer;
+}
+
+.stat-card-overlay {
+  @apply absolute inset-0 bg-gradient-to-br from-white/5 to-white/10 opacity-0 transition-opacity duration-500;
+}
+
+.stat-icon {
+  @apply w-20 h-20 rounded-3xl flex items-center justify-center shadow-2xl transition-all duration-500;
+}
+
+.stat-value {
+  @apply text-4xl font-black text-gray-900 transition-all duration-300;
+}
+
+.stat-change-positive {
+  @apply text-sm font-bold text-emerald-700;
+}
+
+.stat-change-negative {
+  @apply text-sm font-bold text-red-700;
+}
+
+.stat-change-neutral {
+  @apply text-sm font-bold text-gray-700;
+}
+
+.transaction-card {
+  @apply flex items-center justify-between p-6 bg-gradient-to-r from-white/10 to-white/5 rounded-2xl hover:shadow-xl hover:scale-[1.02] hover:bg-white/20 transition-all duration-300 border border-white/10;
+}
+
+.transaction-icon {
+  @apply w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg transition-transform duration-300;
+}
+
+.transaction-amount-positive {
+  @apply font-black text-xl text-emerald-500;
+}
+
+.transaction-amount-negative {
+  @apply font-black text-xl text-red-600;
+}
+
+.notification-card {
+  @apply flex items-start space-x-4 p-4 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-transparent hover:border-white/20;
+}
+
+.notification-icon {
+  @apply w-12 h-12 rounded-2xl flex items-center justify-center mt-1 shadow-lg transition-transform duration-300;
+}
+
+.quick-action-primary {
+  @apply w-full p-4 text-white rounded-2xl hover:scale-105 hover:shadow-xl transition-all duration-300 text-left;
+}
+
+.quick-action-secondary {
+  @apply w-full p-4 text-white rounded-2xl hover:scale-105 hover:shadow-xl transition-all duration-300 text-left;
+}
+
+.achievement-card {
+  @apply relative p-6 rounded-2xl border-2 transition-all duration-300;
+}
+
+.achievement-unlocked {
+  @apply bg-gradient-to-br from-white/20 to-white/10 border-white/30 shadow-lg;
+}
+
+.achievement-locked {
+  @apply bg-white/5 border-white/10 opacity-60;
+}

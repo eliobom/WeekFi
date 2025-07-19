@@ -1,0 +1,96 @@
+/* Reusable Component Styles */
+
+/* Glass Morphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Card Styles */
+.card-hover {
+  @apply transition-all duration-300;
+}
+
+.card-premium {
+  @apply bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl border border-white/50 p-8 transition-all duration-500;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-blue-900 to-emerald-600 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300;
+}
+
+.btn-accent {
+  @apply bg-gradient-to-r from-amber-400 via-orange-500 to-amber-600 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all duration-300 border border-amber-300/20;
+}
+
+/* Text Styles */
+.text-gradient-primary {
+  @apply text-transparent bg-gradient-to-r from-blue-900 via-emerald-700 to-blue-900 bg-clip-text;
+}
+
+.text-gradient-accent {
+  @apply text-transparent bg-gradient-to-r from-amber-600 to-orange-700 bg-clip-text;
+}
+
+.text-gradient-hero {
+  @apply text-transparent bg-gradient-to-r from-white via-amber-200 to-emerald-200 bg-clip-text;
+}
+
+/* Background Patterns */
+.bg-pattern-dots {
+  background-image: radial-gradient(circle, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-pattern-grid {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Icon Styles */
+.icon-container {
+  @apply w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg transition-transform duration-300;
+}
+
+.icon-container-sm {
+  @apply w-12 h-12 rounded-xl flex items-center justify-center shadow-md transition-transform duration-300;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-primary {
+  @apply bg-gradient-to-br from-blue-900 via-blue-800 to-emerald-800;
+}
+
+.bg-gradient-secondary {
+  @apply bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50;
+}
+
+.bg-gradient-accent {
+  @apply bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100;
+}
+
+/* Shadow Utilities */
+.shadow-glow-blue {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.shadow-glow-emerald {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+}
+
+.shadow-glow-amber {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+}

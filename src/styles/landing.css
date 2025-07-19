@@ -1,0 +1,109 @@
+/* Landing Page Specific Styles */
+
+.hero-section {
+  @apply relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-emerald-900 text-white min-h-screen flex items-center;
+}
+
+.hero-background {
+  @apply absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-black/20;
+}
+
+.hero-title {
+  @apply text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-white via-amber-200 to-emerald-200 bg-clip-text text-transparent tracking-tight animate-fade-in;
+}
+
+.hero-subtitle {
+  @apply text-xl md:text-2xl mb-12 text-blue-100 max-w-4xl mx-auto leading-relaxed font-light;
+}
+
+.floating-elements {
+  @apply absolute inset-0;
+}
+
+.floating-dot {
+  @apply absolute rounded-full animate-ping;
+}
+
+.floating-dot-1 {
+  @apply top-20 left-10 w-2 h-2 bg-amber-400;
+}
+
+.floating-dot-2 {
+  @apply top-40 right-20 w-1 h-1 bg-emerald-400;
+  animation-delay: 300ms;
+}
+
+.floating-dot-3 {
+  @apply bottom-40 left-20 w-1.5 h-1.5 bg-blue-400;
+  animation-delay: 700ms;
+}
+
+.floating-dot-4 {
+  @apply bottom-20 right-40 w-1 h-1 bg-amber-300;
+  animation-delay: 1000ms;
+}
+
+.stats-card {
+  @apply text-center transition-transform duration-300;
+}
+
+.stats-number {
+  @apply text-5xl font-black mb-3;
+}
+
+.stats-label {
+  @apply text-gray-600 font-medium;
+}
+
+.stats-line {
+  @apply w-16 h-1 mx-auto mt-2 rounded-full;
+}
+
+.feature-card {
+  @apply bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-xl transition-all duration-500 border border-white/50 relative overflow-hidden;
+}
+
+.feature-card-overlay {
+  @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+}
+
+.plan-card {
+  @apply rounded-3xl border-2 p-8 relative transition-all duration-500;
+}
+
+.plan-card-popular {
+  @apply scale-105 shadow-xl;
+}
+
+.plan-badge {
+  @apply absolute -top-4 left-1/2 transform -translate-x-1/2 text-white px-6 py-2 rounded-full text-sm font-semibold;
+}
+
+.testimonial-card {
+  @apply rounded-3xl transition-all duration-500 shadow-xl border relative overflow-hidden;
+}
+
+.testimonial-overlay {
+  @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+}
+
+.trust-card {
+  @apply bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-xl text-center transition-all duration-500 border border-white/50 relative overflow-hidden;
+}
+
+.cta-section {
+  @apply py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-emerald-900 text-white relative overflow-hidden;
+}
+
+.cta-background {
+  @apply absolute inset-0;
+}
+
+.cta-floating-1 {
+  @apply absolute top-20 left-20 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-emerald-400/20 rounded-full blur-3xl animate-pulse;
+}
+
+.cta-floating-2 {
+  @apply absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-amber-400/20 to-orange-400/20 rounded-full blur-3xl animate-pulse;
+  animation-delay: 1000ms;
+}
